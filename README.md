@@ -4,7 +4,7 @@ A development version of Civictheme UI Kit and theme to test XB integration.
 
 ## Installation:
 
-Follow the steps from https://github.com/phenaproxima/xb-demo project (copied below) to install the xbdemo using ddev. From there, this repo can be integrated.
+Use the commands below to install a clean site with civictheme_xb_preview:
 
 ```bash
 mkdir xb-demo
@@ -31,3 +31,14 @@ ddev drush cr
 # Now log in
 ddev drush user:login xb/xb_page/2/editor
 ```
+
+These can be copied into an `install.sh` file and run as `bash install.sh` for easy setup.
+
+These steps are based on https://github.com/phenaproxima/xb-demo, but with the `civictheme_xb_preview` specific implementation added. 
+
+### Troubleshooting
+
+If you run into issues installing with the above commands please check the following:
+
+1. `ddev` will complain if it finds another `xb_demo` project already installed. In this case you can either remove your existing installation and try again, or run the all the commands below `# These commands are civictheme specific` to integrate `civictheme_xb_preview` into your existing project.
+2. The `civictheme_xb_demo_media` recipe expects the imported media assets to have a particular entity id, so if you've added the `civictheme_xb_preview` to your existing project and added new media items, you may encounter an error that the `target_id` of a images was not found.
