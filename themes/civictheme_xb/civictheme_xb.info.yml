@@ -1,0 +1,8 @@
+name: CivicTheme XB
+type: theme
+base theme: false
+description: CivicTheme Experience Builder is a Drupal experience builder compatible theme.
+core_version_requirement: ^10.2 || ^11
+
+libraries:
+  - 'civictheme_xb/global'

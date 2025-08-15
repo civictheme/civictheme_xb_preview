@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Civictheme Three Column component.
+ *
+ * Variables:
+ * - column_one: [string] First column slot.
+ * - column_two: [string] Second column slot.
+ * - column_three: [string] Third column slot.
+ * - gap: [string] Gap: none, small, medium, large.
+ * - vertical: [string] Vertical: top, center, bottom.
+ */
+#}
+
+{% set column_one %}
+  {% block column_one %}
+    {{ column_one }}
+  {% endblock %}
+{% endset %}
+
+{% set column_two %}
+  {% block column_two %}
+    {{ column_two }}
+  {% endblock %}
+{% endset %}
+
+{% set column_three %}
+  {% block column_three %}
+    {{ column_three }}
+  {% endblock %}
+{% endset %}
+
+{% include 'civictheme_xb:flexible-grid' with {
+  gap: gap,
+  vertical: vertical,
+  horizontal: 'left',
+  col: 'three',
+  wrap: 'wrap',
+  column_one: column_one,
+  column_two: column_two,
+  column_three: column_three,
+} only %}

@@ -1,0 +1,140 @@
+@mixin ct-flexible-grid-apply-xb {
+  @content;
+
+  // Testing a fix to retain gap when using experience builder.
+  & > .xb--sortable-list {
+    @content;
+  }
+}
+
+.ct-flexible-grid {
+  $root: &;
+
+  --gap: 40;
+  --span: 1;
+  --cols: 1;
+
+  @include ct-flexible-grid-apply-xb {
+    display: flex;
+    gap: var(--gap);
+    width: 100%;
+  }
+
+  &:not(#{$root}--col-none):not(#{$root}--gap-none) {
+    & > .xb--sortable-list,
+    & > div {
+      width: calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols) * var(--span) + var(--gap) * (var(--span) - 1));
+    }
+  }
+
+  &--gap-none {
+    & > .xb--sortable-list,
+    & > div {
+      width: calc(100% / var(--cols));
+    }
+  }
+
+  &--gap-small {
+    --gap: 16px;
+  }
+
+  &--gap-medium {
+    --gap: 32px;
+  }
+
+  &--gap-large {
+    --gap: 64px;
+  }
+
+  &--col-two {
+    @include ct-breakpoint(m) {
+      --cols: 2;
+    }
+  }
+
+  &--col-three {
+    @include ct-breakpoint(m) {
+      --cols: 3;
+    }
+  }
+
+  &--col-four {
+    @include ct-breakpoint(s) {
+      --cols: 2;
+    }
+
+    @include ct-breakpoint(l) {
+      --cols: 4;
+    }
+  }
+
+  &--vertical-top {
+    @include ct-flexible-grid-apply-xb {
+      align-items: flex-start;
+    }
+  }
+
+  &--vertical-center {
+    @include ct-flexible-grid-apply-xb {
+      align-items: center;
+    }
+  }
+
+  &--vertical-bottom {
+    @include ct-flexible-grid-apply-xb {
+      align-items: flex-end;
+    }
+  }
+
+  &--wrap-wrap {
+    @include ct-flexible-grid-apply-xb {
+      flex-wrap: wrap;
+    }
+  }
+
+  &--wrap-nowrap {
+    @include ct-flexible-grid-apply-xb {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &--horizontal-left {
+    @include ct-flexible-grid-apply-xb {
+      justify-content: flex-start;
+    }
+  }
+
+  &--horizontal-center {
+    @include ct-flexible-grid-apply-xb {
+      justify-content: center;
+    }
+  }
+
+  &--horizontal-right {
+    @include ct-flexible-grid-apply-xb {
+      justify-content: flex-end;
+    }
+  }
+
+  &--horizontal-space-between {
+    @include ct-flexible-grid-apply-xb {
+      justify-content: space-between;
+    }
+  }
+
+  &--direction-across {
+    @include ct-flexible-grid-apply-xb {
+      flex-direction: row;
+    }
+  }
+
+  &--direction-down {
+    @include ct-flexible-grid-apply-xb {
+      flex-direction: column;
+    }
+  }
+
+  // div:empty {
+  //   display: none;
+  // }
+}

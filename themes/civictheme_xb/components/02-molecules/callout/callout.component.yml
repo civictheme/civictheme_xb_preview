@@ -1,0 +1,76 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Callout
+status: stable
+description: Content component for highlighting important information with title, content and links
+props:
+  type: object
+  properties:
+    theme:
+      type: ['string', 'null']
+      title: Theme
+      description: Theme variation (light or dark).
+      enum:
+        - light
+        - dark
+      examples:
+        - light
+    vertical_spacing:
+      type: ['string', 'null']
+      title: Vertical spacing
+      description: Vertical spacing position (top, bottom, both).
+      enum:
+        - top
+        - bottom
+        - both
+    title:
+      type: ['string', 'null']
+      title: Content
+      description: Heading content.
+      examples:
+        - Heading
+    content:
+      type: ['string', 'null']
+      title: Content
+      description: Content.
+      examples:
+        - Content
+    modifier_class:
+      type: ['string', 'null']
+      title: Modifier classes
+      description: Additional CSS classes.
+    # links:
+    #   type: ['array', 'null']
+    #   title: Links
+    #   description: Callout links.
+    #   items:
+    #     type: ['object', 'null']
+    #     properties:
+    #       text:
+    #         type: ['string', 'null']
+    #         title: Text
+    #         description: Link text.
+    #       url:
+    #         type: ['string', 'null']
+    #         title: URL
+    #         description: Link URL.
+    #       is_new_window:
+    #         type: ['boolean', 'null']
+    #         title: New window
+    #         description: Whether to open link in a new window.
+    #       is_external:
+    #         type: ['boolean', 'null']
+    #         title: External
+    #         description: Whether the link is external.
+slots:
+  # title:
+  #   title: Title
+  #   description: Title text.
+  # content:
+  #   title: Content
+  #   description: Content text.
+  content_top:
+    title: Top content
+    description: Callout top content.
+  content_bottom:
+    title: Bottom content
+    description: Callout bottom content.

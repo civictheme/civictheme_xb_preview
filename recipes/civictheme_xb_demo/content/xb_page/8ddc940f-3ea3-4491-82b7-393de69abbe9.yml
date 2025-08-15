@@ -1,0 +1,253 @@
+_meta:
+  version: '1.0'
+  entity_type: xb_page
+  uuid: 8ddc940f-3ea3-4491-82b7-393de69abbe9
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+      target_uuid: ''
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+      target_uuid: ''
+  title:
+    -
+      value: 'CivicTheme XB Demo'
+  components:
+    -
+      uuid: d75a4675-41ea-4b85-8381-27f31450b56b
+      component_id: sdc.civictheme_xb.banner
+      component_version: 5675d5a23fbcf57e
+      inputs: '{"theme":"light","is_decorative":true,"background_image_blend_mode":"normal","title":"CivicTheme XB Demo","background_image":{"target_id":"28"},"featured_image":{"target_id":"29"}}'
+    -
+      parent_uuid: d75a4675-41ea-4b85-8381-27f31450b56b
+      slot: content_middle
+      uuid: 5ff01b35-bb37-4790-b7be-1932e1956985
+      component_id: sdc.civictheme_xb.flexible-grid
+      component_version: 67f59c8aacf45fc9
+      inputs: '{"vertical":"top","horizontal":"left","direction":"down","gap":"small","wrap":"wrap"}'
+    -
+      parent_uuid: 5ff01b35-bb37-4790-b7be-1932e1956985
+      slot: content
+      uuid: f83f7406-0e08-4449-b4f2-43a0333452b7
+      component_id: sdc.civictheme_xb.paragraph
+      component_version: 8c4de0e757926290
+      inputs: '{"theme":"light","content":"laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur","size":"regular","no_margin":false}'
+    -
+      parent_uuid: 5ff01b35-bb37-4790-b7be-1932e1956985
+      slot: content
+      uuid: 48165268-5baf-4949-8bf0-0e327e8a506d
+      component_id: sdc.civictheme_xb.button
+      component_version: 94fee03ea9a7b002
+      inputs: '{"theme":"light","kind":"link","type":"secondary","size":"regular","icon_group_disabled":false,"icon_single_only":false,"text":"Button text","is_new_window":false,"is_external":false,"url":{"uri":"https:\/\/duck.com","options":[]}}'
+    -
+      parent_uuid: d75a4675-41ea-4b85-8381-27f31450b56b
+      slot: content_below
+      uuid: 022f8fc3-e13c-4b5e-8477-595f0f7d70b6
+      component_id: sdc.civictheme_xb.layout-3-col
+      component_version: 9e954e05578caa69
+      inputs: '{"gap":"small","vertical":"top"}'
+    -
+      parent_uuid: 022f8fc3-e13c-4b5e-8477-595f0f7d70b6
+      slot: column_one
+      uuid: c0e45098-d85a-4c75-8312-464362eae05b
+      component_id: sdc.civictheme_xb.subject-card
+      component_version: be65c74674409a6a
+      inputs: '{"theme":"light","image":{"target_id":"30"},"title":"First Subject","link_is_new_window":false,"link_url":{"uri":"https:\/\/duck.com","options":[]}}'
+    -
+      parent_uuid: 022f8fc3-e13c-4b5e-8477-595f0f7d70b6
+      slot: column_two
+      uuid: e5927ce3-a051-4f96-8b56-a549c2f8ecca
+      component_id: sdc.civictheme_xb.subject-card
+      component_version: be65c74674409a6a
+      inputs: '{"theme":"light","image":{"target_id":"30"},"title":"Second Subject","link_is_new_window":false,"link_url":{"uri":"https:\/\/duck.com","options":[]}}'
+    -
+      parent_uuid: 022f8fc3-e13c-4b5e-8477-595f0f7d70b6
+      slot: column_three
+      uuid: b6111364-c1aa-4ca4-affd-b22dbddf1087
+      component_id: sdc.civictheme_xb.subject-card
+      component_version: be65c74674409a6a
+      inputs: '{"theme":"light","title":"Third Subject","link_is_new_window":false,"link_url":{"uri":"https:\/\/duck.com","options":[]},"image":{"target_id":"30"}}'
+    -
+      uuid: 4135d7d6-b62d-486f-843b-d812094734d7
+      component_id: sdc.civictheme_xb.container
+      component_version: 213af6d8860d9d4e
+      inputs: '{"theme":"light","is_contained":true,"vertical_spacing":"both","visibility":"always"}'
+    -
+      parent_uuid: 4135d7d6-b62d-486f-843b-d812094734d7
+      slot: content
+      uuid: f603d35b-069b-497a-8ccf-83c20600beea
+      component_id: sdc.civictheme_xb.flexible-grid
+      component_version: 67f59c8aacf45fc9
+      inputs: '{"vertical":"top","horizontal":"left","direction":"down","gap":"small","wrap":"wrap"}'
+    -
+      parent_uuid: f603d35b-069b-497a-8ccf-83c20600beea
+      slot: content
+      uuid: 0655a0b1-c11e-47c4-98d7-4115a488c813
+      component_id: sdc.civictheme_xb.heading
+      component_version: 73f28cf393603587
+      inputs: '{"theme":"light","content":"Heading","level":2}'
+    -
+      parent_uuid: f603d35b-069b-497a-8ccf-83c20600beea
+      slot: content
+      uuid: c0c6cba1-652a-4676-b0b9-741e5d3d675b
+      component_id: sdc.civictheme_xb.paragraph
+      component_version: 8c4de0e757926290
+      inputs: '{"theme":"light","content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ","size":"regular","no_margin":false}'
+    -
+      parent_uuid: f603d35b-069b-497a-8ccf-83c20600beea
+      slot: content
+      uuid: 2a64c612-6e24-4597-af94-27624017f533
+      component_id: sdc.civictheme_xb.link
+      component_version: 76716ad6e639e402
+      inputs: '{"theme":"light","text":"See more about thing","url":{"uri":"https:\/\/duck.com","options":[]},"is_new_window":false,"is_external":false,"icon":"right-arrow-2","icon_group_disabled":false,"icon_single_only":false}'
+    -
+      uuid: 2f3906b9-0077-4bcb-9a87-ba7a51966b03
+      component_id: sdc.civictheme_xb.container
+      component_version: 213af6d8860d9d4e
+      inputs: '{"theme":"light","is_contained":true,"with_background":true,"vertical_spacing_inner":"both","visibility":"always"}'
+    -
+      parent_uuid: 2f3906b9-0077-4bcb-9a87-ba7a51966b03
+      slot: content
+      uuid: 6fb45026-e2c3-4f36-880b-ac9715a26448
+      component_id: sdc.civictheme_xb.layout-2-col
+      component_version: d9bc0401c0a4f6c7
+      inputs: '{"gap":"large","vertical":"top"}'
+    -
+      parent_uuid: 6fb45026-e2c3-4f36-880b-ac9715a26448
+      slot: column_one
+      uuid: 4a3342d4-ecf5-443a-b46b-09015603e532
+      component_id: sdc.civictheme_xb.flexible-grid
+      component_version: 67f59c8aacf45fc9
+      inputs: '{"vertical":"top","horizontal":"left","direction":"down","gap":"medium","wrap":"wrap"}'
+    -
+      parent_uuid: 4a3342d4-ecf5-443a-b46b-09015603e532
+      slot: content
+      uuid: 5ab6fbe5-095c-4566-81be-d6b277e9b8ab
+      component_id: sdc.civictheme_xb.image
+      component_version: a9ce79abac7a0f40
+      inputs: '{"theme":"light","image":{"target_id":"30"},"width":"100%"}'
+    -
+      parent_uuid: 6fb45026-e2c3-4f36-880b-ac9715a26448
+      slot: column_two
+      uuid: a62a8fe2-0d22-4fcc-956a-6225021d4bb7
+      component_id: sdc.civictheme_xb.flexible-grid
+      component_version: 67f59c8aacf45fc9
+      inputs: '{"vertical":"top","horizontal":"left","direction":"down","gap":"medium","wrap":"wrap"}'
+    -
+      parent_uuid: a62a8fe2-0d22-4fcc-956a-6225021d4bb7
+      slot: content
+      uuid: dc51dd8a-7072-486c-9c4e-07884721f937
+      component_id: sdc.civictheme_xb.image
+      component_version: a9ce79abac7a0f40
+      inputs: '{"theme":"light","image":{"target_id":"30"},"width":"100%"}'
+    -
+      uuid: ef22ba5f-37af-44e6-9509-fff3741504cf
+      component_id: sdc.civictheme_xb.container
+      component_version: 213af6d8860d9d4e
+      inputs: '{"theme":"light","is_contained":true,"with_background":false,"vertical_spacing":"both","visibility":"always"}'
+    -
+      parent_uuid: ef22ba5f-37af-44e6-9509-fff3741504cf
+      slot: content
+      uuid: 3425ac66-7426-45cc-906e-60598f2d855c
+      component_id: sdc.civictheme_xb.callout
+      component_version: 3f3f11136c2fa13d
+      inputs: '{"theme":"light","title":"Heading","content":"Labore voluptate sint nostrud velit cillum ad velit ut quis nisi nostrud ex officia culpa incididunt anim duis sint dolore exercitation ut commodo ut aute in est pariatur aute in est commodo tempor aute anim cupidatat esse excepteur nostrud anim pariatur "}'
+    -
+      parent_uuid: 3425ac66-7426-45cc-906e-60598f2d855c
+      slot: content_bottom
+      uuid: aabd8d40-973d-4e33-ba67-704acd1cde9e
+      component_id: sdc.civictheme_xb.link
+      component_version: 76716ad6e639e402
+      inputs: '{"theme":"light","text":"Read about labore voluptate","is_new_window":false,"is_external":true,"icon":"right-arrow-2","icon_group_disabled":false,"icon_single_only":true,"url":{"uri":"https:\/\/duck.com","options":[]}}'
+    -
+      uuid: 433e50d8-95e7-41f6-8ea6-e496244d8709
+      component_id: sdc.civictheme_xb.campaign
+      component_version: 172be1751349d721
+      inputs: '{"theme":"dark","vertical_spacing":"both","title":"Campaign title","content":"Campaign content","image_position":"left","image":{"target_id":"30"}}'
+    -
+      parent_uuid: 433e50d8-95e7-41f6-8ea6-e496244d8709
+      slot: content_top
+      uuid: 8594dfae-4433-4771-824c-955051729b1b
+      component_id: sdc.civictheme_xb.tag
+      component_version: de98c9e3cf8e3177
+      inputs: '{"theme":"dark","type":"primary","content":"Open Source","is_new_window":false,"is_external":false}'
+    -
+      parent_uuid: 433e50d8-95e7-41f6-8ea6-e496244d8709
+      slot: content_top
+      uuid: 3f3e983a-88c2-48a0-9eb1-9a9a737189db
+      component_id: sdc.civictheme_xb.tag
+      component_version: de98c9e3cf8e3177
+      inputs: '{"theme":"dark","type":"primary","content":"Drupal","is_new_window":false,"is_external":false}'
+    -
+      parent_uuid: 433e50d8-95e7-41f6-8ea6-e496244d8709
+      slot: content_bottom
+      uuid: 6e4d160c-d844-4a56-95b1-b25fa1dcc40c
+      component_id: sdc.civictheme_xb.button
+      component_version: 94fee03ea9a7b002
+      inputs: '{"theme":"dark","kind":"link","type":"primary","size":"regular","text":"Button text","icon_group_disabled":false,"icon_single_only":false,"is_new_window":false,"is_external":false,"url":{"uri":"https:\/\/duck.com","options":[]}}'
+    -
+      uuid: 14817d59-5a34-4b77-9e91-7c4568802e05
+      component_id: sdc.civictheme_xb.container
+      component_version: 213af6d8860d9d4e
+      inputs: '{"theme":"light","is_contained":true,"vertical_spacing":"both","with_background":false,"visibility":"always"}'
+    -
+      parent_uuid: 14817d59-5a34-4b77-9e91-7c4568802e05
+      slot: content
+      uuid: 042d0dc9-0e1c-436f-9e9a-b599fc0ad13a
+      component_id: sdc.civictheme_xb.layout-3-col
+      component_version: 9e954e05578caa69
+      inputs: '{"gap":"small","vertical":"top"}'
+    -
+      parent_uuid: 042d0dc9-0e1c-436f-9e9a-b599fc0ad13a
+      slot: column_one
+      uuid: 0e87caee-9020-4870-a413-6a7fcc6fa51d
+      component_id: sdc.civictheme_xb.promo-card
+      component_version: e562393c52ed44b2
+      inputs: '{"theme":"light","title":"Promo card title","summary":"Promo card summary","link_url":{"uri":"https:\/\/duck.com","options":[]},"link_is_new_window":false}'
+    -
+      parent_uuid: 042d0dc9-0e1c-436f-9e9a-b599fc0ad13a
+      slot: column_two
+      uuid: d0153010-e01e-4791-b7ef-bc56c9b969e1
+      component_id: sdc.civictheme_xb.promo-card
+      component_version: e562393c52ed44b2
+      inputs: '{"theme":"light","title":"Promo card title","summary":"Promo card summary","link_url":{"uri":"https:\/\/duck.com","options":[]},"link_is_new_window":false}'
+    -
+      parent_uuid: 042d0dc9-0e1c-436f-9e9a-b599fc0ad13a
+      slot: column_three
+      uuid: 5da84009-a939-4b8c-91ac-5728883845c5
+      component_id: sdc.civictheme_xb.promo-card
+      component_version: e562393c52ed44b2
+      inputs: '{"theme":"light","title":"Promo card title","summary":"Promo card summary","link_url":{"uri":"https:\/\/duck.com","options":[]},"link_is_new_window":false}'
+    -
+      uuid: dbb79796-80a7-4199-b269-7a128323a0a5
+      component_id: sdc.civictheme_xb.promo
+      component_version: 24aab46d64e069ae
+      inputs: '{"theme":"light","is_contained":true,"vertical_spacing":"both","with_background":false,"title":"Subscribe to our newsletter","content":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","link_text":"Subscribe","link_url":{"uri":"https:\/\/duck.com","options":[]},"link_is_new_window":false,"link_is_external":true}'
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  created:
+    -
+      value: 1754525214
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'CivicTheme XB Demo | Drush Site-Install'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: /page/31

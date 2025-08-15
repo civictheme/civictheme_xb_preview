@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Civictheme Flexible Grid component.
+ */
+#}
+
+{% set gap_class = 'ct-flexible-grid--gap-%s'|format(gap|default('none')) %}
+{% set vertical_class = 'ct-flexible-grid--vertical-%s'|format(vertical|default('center')) %}
+{% set horizontal_class = 'ct-flexible-grid--horizontal-%s'|format(horizontal|default('left')) %}
+{% set direction_class = 'ct-flexible-grid--direction-%s'|format(direction|default('across')) %}
+{% set col_class = 'ct-flexible-grid--col-%s'|format(col|default('none')) %}
+{% set wrap_class = 'ct-flexible-grid--wrap-%s'|format(wrap|default('wrap')) %}
+{% set modifier_class = '%s %s %s %s %s %s'|format(gap_class, vertical_class, horizontal_class, direction_class, wrap_class, col_class, modifier_class|default('')) %}
+{% set columns = { 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'none': 0 } %}
+{% set col_count = columns[col] %}
+
+<div class="ct-flexible-grid {{ modifier_class }}">
+  {% if col_count == 0 %}
+    {%- block content %}
+      {{- content -}}
+    {% endblock -%}
+  {% endif %}
+  {% if col_count > 0 %}
+    <div>
+      {%- block column_one %}
+        {{- column_one -}}
+      {% endblock -%}
+    </div>
+  {% endif %}
+  {% if col_count > 1 %}
+    <div>
+      {%- block column_two %}
+        {{- column_two -}}
+      {% endblock -%}
+    </div>
+  {% endif %}
+  {% if col_count > 2 %}
+    <div>
+      {%- block column_three %}
+        {{- column_three -}}
+      {% endblock -%}
+    </div>
+  {% endif %}
+  {% if col_count > 3 %}
+    <div>
+      {%- block column_four %}
+        {{- column_four -}}
+      {% endblock -%}
+    </div>
+  {% endif %}
+</div>

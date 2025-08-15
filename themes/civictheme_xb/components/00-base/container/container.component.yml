@@ -1,0 +1,65 @@
+$schema: 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+name: Container
+status: experimental
+props:
+  type: object
+  properties:
+    theme:
+      type: ['string', 'null']
+      title: Theme
+      description: Theme variation (light or dark).
+      enum:
+        - light
+        - dark
+      examples:
+        - light
+    is_contained:
+      type: ['boolean', 'null']
+      title: Contained
+      description: Whether the content is contained in a container.
+      examples:
+        - true
+    with_background:
+      type: ['boolean', 'null']
+      title: With Background
+      description: Whether to display with a background.
+    vertical_spacing:
+      type: ['string', 'null']
+      title: Vertical Spacing (Outer)
+      description: Vertical spacing for the promo (top, bottom, or both).
+      enum:
+        - top
+        - bottom
+        - both
+      examples:
+        - both
+    vertical_spacing_inner:
+      type: ['string', 'null']
+      title: Vertical Spacing (Inner)
+      description: Vertical spacing for the promo (top, bottom, or both).
+      enum:
+        - top
+        - bottom
+        - both
+    visibility:
+      type: ['string', 'null']
+      title: Visible
+      description: Visibility
+      enum:
+        - always
+        - mobile only
+        - tablet only
+        - mobile and tablet
+        - tablet and up
+        - desktop and up
+      examples:
+        - always
+    modifier_class:
+      type: string
+      title: Modifier class
+      description: Additional classes.
+slots:
+  content:
+    type: string
+    title: Content
+    description: Content slot.

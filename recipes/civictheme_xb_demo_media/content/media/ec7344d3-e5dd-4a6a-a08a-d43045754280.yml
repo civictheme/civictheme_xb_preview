@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ec7344d3-e5dd-4a6a-a08a-d43045754280
+  bundle: image
+  default_langcode: en
+  depends:
+    2946b8eb-2c2e-42c5-81e4-3cc58850e180: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+      target_uuid: ''
+  name:
+    -
+      value: 'Starshot Updates.png'
+  created:
+    -
+      value: 1754870723
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Drush Site-Install'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://xb-demo.ddev.site:33000/page/1'
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 2946b8eb-2c2e-42c5-81e4-3cc58850e180
+      alt: 'Space man'
+      title: ''
+      width: 600
+      height: 600
+      srcset_candidate_uri_template: '/sites/default/files/styles/xb_parametrized_width--{width}/public/2025-08/Starshot%20Updates.png.webp?itok=ZTPoqFr4'
+      src_with_alternate_widths: '/sites/default/files/2025-08/Starshot%20Updates.png?alternateWidths=/sites/default/files/styles/xb_parametrized_width--%7Bwidth%7D/public/2025-08/Starshot%2520Updates.png.webp%3Fitok%3DZTPoqFr4'

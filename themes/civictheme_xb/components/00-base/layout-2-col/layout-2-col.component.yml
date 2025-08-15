@@ -1,0 +1,35 @@
+$schema: 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+name: Columns - 2
+status: stable
+props:
+  type: object
+  properties:
+    gap:
+      type: string
+      title: Gap between items
+      enum:
+        - none
+        - small
+        - medium
+        - large
+      default: small
+      examples:
+        - small
+    vertical:
+      type: string
+      title: Vertical alignment
+      description: 'Vertical alignment: top, center, bottom.'
+      enum:
+        - top
+        - center
+        - bottom
+      default: top
+      examples:
+        - top
+slots:
+  column_one:
+    title: Column one
+    description: First column slot.
+  column_two:
+    title: Column two
+    description: Second column slot.

@@ -1,0 +1,22 @@
+//
+// Drupal Header component.
+//
+
+@import 'components/00-base/variables';
+
+.toolbar-tray-open.toolbar-fixed {
+  $toolbar-sticky-header-height: 100px;
+
+  .ct-header {
+    :target {
+      &::before {
+        @include ct-breakpoint($ct-header-desktop-menu-breakpoint) {
+          content: '';
+          display: block;
+          height: $toolbar-sticky-header-height;
+          margin: -$toolbar-sticky-header-height 0 0;
+        }
+      }
+    }
+  }
+}

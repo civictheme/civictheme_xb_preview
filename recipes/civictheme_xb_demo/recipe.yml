@@ -1,0 +1,12 @@
+name: CivicTheme XB Demo
+recipes:
+  - civictheme_xb_demo_media
+install:
+- gin
+- civictheme_xb
+config:
+  actions:
+    system.theme:
+      simpleConfigUpdate:
+        default: civictheme_xb
+        admin: gin

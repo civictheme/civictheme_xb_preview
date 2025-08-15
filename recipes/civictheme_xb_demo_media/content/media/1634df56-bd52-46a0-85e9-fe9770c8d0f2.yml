@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1634df56-bd52-46a0-85e9-fe9770c8d0f2
+  bundle: image
+  default_langcode: en
+  depends:
+    f1d57570-49ab-4f7b-8aa6-a91b5312eac5: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+      target_uuid: ''
+  name:
+    -
+      value: Background.png
+  created:
+    -
+      value: 1754873489
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Drush Site-Install'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://xb-demo.ddev.site:33000/page/1'
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: f1d57570-49ab-4f7b-8aa6-a91b5312eac5
+      alt: 'Background dots'
+      title: ''
+      width: 1440
+      height: 852
+      srcset_candidate_uri_template: '/sites/default/files/styles/xb_parametrized_width--{width}/public/2025-08/Background.png.webp?itok=h2pXdZ2f'
+      src_with_alternate_widths: '/sites/default/files/2025-08/Background.png?alternateWidths=/sites/default/files/styles/xb_parametrized_width--%7Bwidth%7D/public/2025-08/Background.png.webp%3Fitok%3Dh2pXdZ2f'

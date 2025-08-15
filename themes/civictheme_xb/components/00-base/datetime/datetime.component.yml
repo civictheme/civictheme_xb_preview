@@ -1,0 +1,35 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: DateTime
+status: obsolete
+description: Date/time component with configurable formatting options
+props:
+  type: object
+  properties:
+    start:
+      type: ['string', 'null']
+      title: Start time
+      description: Formatted start time.
+      examples:
+        - '20 Jan 2023 11:00'
+    start_iso:
+      type: ['string', 'null']
+      title: Start time ISO
+      description: Start time in ISO format.
+      examples:
+        - '2023-01-20T00:00:00.000Z'
+    end:
+      type: ['string', 'null']
+      title: End time
+      description: Formatted end time.
+      examples:
+        - '21 Jan 2023 15:00'
+    end_iso:
+      type: ['string', 'null']
+      title: End time ISO
+      description: End time in ISO format.
+      examples:
+        - '2023-01-21T04:00:00.000Z'
+    modifier_class:
+      type: ['string', 'null']
+      title: Modifier classes
+      description: Additional classes.

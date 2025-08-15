@@ -1,0 +1,1050 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap");
+html {
+  text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ct-button {
+  cursor: pointer;
+  border: 0.125rem solid transparent;
+  border-radius: 0.25rem;
+  appearance: button;
+}
+@media (min-width: 0) {
+  .ct-button {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ct-button {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+.ct-button {
+  padding: 0.875rem 2.5rem;
+}
+.ct-button--primary {
+  display: inline-block;
+  text-decoration: none;
+  outline-offset: 0.125rem;
+  outline-width: 0.1875rem;
+}
+.ct-button--primary {
+  transition: all 0.25s ease;
+}
+.ct-button--primary:focus-visible, .ct-button--primary:hover, .ct-button--primary:active {
+  text-decoration: none;
+}
+.ct-button--primary[disabled] {
+  text-decoration: none;
+  pointer-events: none;
+  user-select: none;
+  opacity: 50%;
+}
+.ct-button--primary input {
+  position: absolute !important;
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  overflow: hidden;
+  height: 1px !important;
+  width: 1px !important;
+  word-wrap: normal;
+}
+.ct-button--primary input.ct-focusable:active, .ct-button--primary input.ct-focusable:focus-visible, .ct-button--primary input.ct-focusable:hover {
+  position: static !important;
+  overflow: visible;
+  clip: auto;
+  width: auto !important;
+  height: auto !important;
+}
+.ct-button--primary.ct-theme-light {
+  background-color: var(--ct-color-light-interaction-background);
+  border-color: var(--ct-color-light-interaction-background);
+  color: var(--ct-color-light-interaction-text);
+}
+.ct-button--primary.ct-theme-light:hover {
+  background-color: var(--ct-color-light-interaction-hover-background);
+  border-color: var(--ct-color-light-interaction-hover-background);
+  color: var(--ct-color-light-interaction-hover-text);
+}
+.ct-button--primary.ct-theme-light:active, .ct-button--primary.ct-theme-light.active {
+  background-color: var(--ct-color-light-interaction-hover-background);
+  border-color: var(--ct-color-light-interaction-hover-background);
+  color: var(--ct-color-light-interaction-hover-text);
+}
+.ct-button--primary.ct-theme-light:focus-visible, .ct-button--primary.ct-theme-light.focus {
+  outline-color: var(--ct-color-light-interaction-focus);
+  outline-style: solid;
+}
+.ct-button--primary.ct-theme-dark {
+  background-color: var(--ct-color-dark-interaction-background);
+  border-color: var(--ct-color-dark-interaction-background);
+  color: var(--ct-color-dark-interaction-text);
+}
+.ct-button--primary.ct-theme-dark:hover {
+  background-color: var(--ct-color-dark-interaction-hover-background);
+  border-color: var(--ct-color-dark-interaction-hover-background);
+  color: var(--ct-color-dark-interaction-hover-text);
+}
+.ct-button--primary.ct-theme-dark:active, .ct-button--primary.ct-theme-dark.active {
+  background-color: var(--ct-color-dark-interaction-hover-background);
+  border-color: var(--ct-color-dark-interaction-hover-background);
+  color: var(--ct-color-dark-interaction-hover-text);
+}
+.ct-button--primary.ct-theme-dark:focus-visible, .ct-button--primary.ct-theme-dark.focus {
+  outline-color: var(--ct-color-dark-interaction-focus);
+  outline-style: solid;
+}
+.ct-button--secondary {
+  display: inline-block;
+  text-decoration: none;
+  outline-offset: 0.125rem;
+  outline-width: 0.1875rem;
+}
+.ct-button--secondary {
+  transition: all 0.25s ease;
+}
+.ct-button--secondary:focus-visible, .ct-button--secondary:hover, .ct-button--secondary:active {
+  text-decoration: none;
+}
+.ct-button--secondary[disabled] {
+  text-decoration: none;
+  pointer-events: none;
+  user-select: none;
+  opacity: 50%;
+}
+.ct-button--secondary input {
+  position: absolute !important;
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  overflow: hidden;
+  height: 1px !important;
+  width: 1px !important;
+  word-wrap: normal;
+}
+.ct-button--secondary input.ct-focusable:active, .ct-button--secondary input.ct-focusable:focus-visible, .ct-button--secondary input.ct-focusable:hover {
+  position: static !important;
+  overflow: visible;
+  clip: auto;
+  width: auto !important;
+  height: auto !important;
+}
+.ct-button--secondary.ct-theme-light {
+  background-color: transparent;
+  border-color: var(--ct-color-light-interaction-background);
+  color: var(--ct-color-light-interaction-background);
+}
+.ct-button--secondary.ct-theme-light:hover {
+  background-color: transparent;
+  border-color: var(--ct-color-light-interaction-hover-background);
+  color: var(--ct-color-light-interaction-hover-background);
+}
+.ct-button--secondary.ct-theme-light:active, .ct-button--secondary.ct-theme-light.active {
+  background-color: transparent;
+  border-color: var(--ct-color-light-interaction-hover-background);
+  color: var(--ct-color-light-interaction-hover-background);
+}
+.ct-button--secondary.ct-theme-light:focus-visible, .ct-button--secondary.ct-theme-light.focus {
+  outline-color: var(--ct-color-light-interaction-focus);
+  outline-style: solid;
+}
+.ct-button--secondary.ct-theme-dark {
+  background-color: transparent;
+  border-color: var(--ct-color-dark-interaction-background);
+  color: var(--ct-color-dark-interaction-background);
+}
+.ct-button--secondary.ct-theme-dark:hover {
+  background-color: transparent;
+  border-color: var(--ct-color-dark-interaction-hover-background);
+  color: var(--ct-color-dark-interaction-hover-background);
+}
+.ct-button--secondary.ct-theme-dark:active, .ct-button--secondary.ct-theme-dark.active {
+  background-color: transparent;
+  border-color: var(--ct-color-dark-interaction-hover-background);
+  color: var(--ct-color-dark-interaction-hover-background);
+}
+.ct-button--secondary.ct-theme-dark:focus-visible, .ct-button--secondary.ct-theme-dark.focus {
+  outline-color: var(--ct-color-dark-interaction-focus);
+  outline-style: solid;
+}
+.ct-button--tertiary {
+  display: inline-block;
+  text-decoration: none;
+  outline-offset: 0.125rem;
+  outline-width: 0.1875rem;
+}
+.ct-button--tertiary {
+  transition: all 0.25s ease;
+}
+.ct-button--tertiary:focus-visible, .ct-button--tertiary:hover, .ct-button--tertiary:active {
+  text-decoration: none;
+}
+.ct-button--tertiary[disabled] {
+  text-decoration: none;
+  pointer-events: none;
+  user-select: none;
+  opacity: 50%;
+}
+.ct-button--tertiary input {
+  position: absolute !important;
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  overflow: hidden;
+  height: 1px !important;
+  width: 1px !important;
+  word-wrap: normal;
+}
+.ct-button--tertiary input.ct-focusable:active, .ct-button--tertiary input.ct-focusable:focus-visible, .ct-button--tertiary input.ct-focusable:hover {
+  position: static !important;
+  overflow: visible;
+  clip: auto;
+  width: auto !important;
+  height: auto !important;
+}
+.ct-button--tertiary.ct-theme-light {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ct-color-light-interaction-background);
+}
+.ct-button--tertiary.ct-theme-light:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ct-color-light-interaction-hover-background);
+}
+.ct-button--tertiary.ct-theme-light:active, .ct-button--tertiary.ct-theme-light.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ct-color-light-interaction-hover-background);
+}
+.ct-button--tertiary.ct-theme-light:focus-visible, .ct-button--tertiary.ct-theme-light.focus {
+  outline-color: var(--ct-color-light-interaction-focus);
+  outline-style: solid;
+}
+.ct-button--tertiary.ct-theme-dark {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ct-color-dark-interaction-background);
+}
+.ct-button--tertiary.ct-theme-dark:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ct-color-dark-interaction-hover-background);
+}
+.ct-button--tertiary.ct-theme-dark:active, .ct-button--tertiary.ct-theme-dark.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ct-color-dark-interaction-hover-background);
+}
+.ct-button--tertiary.ct-theme-dark:focus-visible, .ct-button--tertiary.ct-theme-dark.focus {
+  outline-color: var(--ct-color-dark-interaction-focus);
+  outline-style: solid;
+}
+.ct-button--tertiary:focus-visible, .ct-button--tertiary:hover, .ct-button--tertiary:active {
+  text-decoration: none;
+}
+@media (min-width: 0) {
+  .ct-button--tertiary--large {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ct-button--tertiary--large {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+.ct-button--tertiary--large__dismiss {
+  margin-left: 1.5rem;
+}
+@media (min-width: 0) {
+  .ct-button--tertiary--regular {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ct-button--tertiary--regular {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+.ct-button--tertiary--regular__dismiss {
+  margin-left: 1.5rem;
+}
+@media (min-width: 0) {
+  .ct-button--tertiary--small {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ct-button--tertiary--small {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+.ct-button--tertiary--small {
+  border-width: 0.0625rem;
+}
+.ct-button--tertiary--small__dismiss {
+  margin-left: 1rem;
+}
+@media (min-width: 0) {
+  .ct-button--large {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ct-button--large {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+.ct-button--large {
+  padding: 1rem 3rem;
+}
+.ct-button--large.ct-button--tertiary {
+  padding: 0;
+}
+@media (min-width: 0) {
+  .ct-button--regular {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ct-button--regular {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+.ct-button--regular {
+  padding: 0.875rem 2.5rem;
+}
+.ct-button--regular.ct-button--tertiary {
+  padding: 0;
+}
+@media (min-width: 0) {
+  .ct-button--small {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ct-button--small {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+.ct-button--small {
+  border-width: 0.0625rem;
+}
+.ct-button--small {
+  padding: 0.5rem 2rem;
+}
+.ct-button--small.ct-button--tertiary {
+  padding: 0;
+}
+
+.ck-editor__editable {
+  color: var(--ct-color-light-body);
+}
+.ck-editor__editable hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+.ck-editor__editable code,
+.ck-editor__editable kbd,
+.ck-editor__editable samp,
+.ck-editor__editable pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+.ck-editor__editable abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+.ck-editor__editable b,
+.ck-editor__editable strong {
+  font-weight: bolder;
+}
+.ck-editor__editable small {
+  font-size: 80%;
+}
+.ck-editor__editable sub,
+.ck-editor__editable sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.ck-editor__editable sub {
+  bottom: -0.25em;
+}
+.ck-editor__editable sup {
+  top: -0.5em;
+}
+@media (min-width: 0) {
+  .ck-editor__editable {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+.ck-editor__editable h1,
+.ck-editor__editable h2,
+.ck-editor__editable h3,
+.ck-editor__editable h4,
+.ck-editor__editable h5,
+.ck-editor__editable h6 {
+  margin: 0;
+}
+@media (min-width: 0) {
+  .ck-editor__editable h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+}
+.ck-editor__editable h1 {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h1 {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 0) {
+  .ck-editor__editable h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+  }
+}
+.ck-editor__editable h2 {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h2 {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 0) {
+  .ck-editor__editable h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+  }
+}
+.ck-editor__editable h3 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h3 {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 0) {
+  .ck-editor__editable h4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+  }
+}
+.ck-editor__editable h4 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h4 {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 0) {
+  .ck-editor__editable h5 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h5 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
+}
+.ck-editor__editable h5 {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h5 {
+    margin-bottom: 1rem;
+  }
+}
+.ck-editor__editable h6 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.ck-editor__editable h6 {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .ck-editor__editable h6 {
+    margin-bottom: 1rem;
+  }
+}
+.ck-editor__editable p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.ck-editor__editable p:first-child {
+  margin-top: 0;
+}
+.ck-editor__editable:last-child p:last-child {
+  margin-bottom: 0;
+}
+.ck-editor__editable a:not(.ct-button) {
+  text-decoration: underline;
+  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 0.1875rem;
+  padding: 0.1875rem 0 0.125rem;
+  word-break: break-word;
+}
+.ck-editor__editable a:not(.ct-button):hover {
+  text-decoration: none;
+  padding: 0.1875rem 0 0.25rem;
+}
+.ck-editor__editable a:not(.ct-button):visited.ct-theme-light {
+  color: var(--ck-editor__editable a:not(ct-button):visited-light-visited-color);
+}
+.ck-editor__editable a:not(.ct-button):visited.ct-theme-light:hover {
+  border-color: var(--ck-editor__editable a:not(ct-button):visited-light-visited-hover-border-color);
+  color: var(--ck-editor__editable a:not(ct-button):visited-light-visited-hover-color);
+}
+.ck-editor__editable a:not(.ct-button):visited.ct-theme-dark {
+  color: var(--ck-editor__editable a:not(ct-button):visited-dark-visited-color);
+}
+.ck-editor__editable a:not(.ct-button):visited.ct-theme-dark:hover {
+  border-color: var(--ck-editor__editable a:not(ct-button):visited-dark-visited-hover-border-color);
+  color: var(--ck-editor__editable a:not(ct-button):visited-dark-visited-hover-color);
+}
+@media (min-width: 0) {
+  .ck-editor__editable blockquote {
+    font-size: 1.125rem;
+    line-height: 1.815rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable blockquote {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+  }
+}
+.ck-editor__editable blockquote {
+  position: relative;
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  display: grid;
+}
+.ck-editor__editable blockquote::before {
+  content: "";
+  width: 0.375rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.25rem;
+}
+@media (min-width: 0) {
+  .ck-editor__editable blockquote p {
+    font-size: 1.125rem;
+    line-height: 1.815rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable blockquote p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+  }
+}
+.ck-editor__editable blockquote p {
+  margin-bottom: 0;
+}
+@media (min-width: 0) {
+  .ck-editor__editable blockquote cite {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable blockquote cite {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+.ck-editor__editable blockquote cite {
+  padding-top: 1rem;
+  font-style: normal;
+}
+.ck-editor__editable blockquote cite::before {
+  content: "-";
+  margin-right: 0.25rem;
+}
+.ck-editor__editable ul:not(.ct-item-list) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+.ck-editor__editable ul:not(.ct-item-list) > li {
+  position: relative;
+  padding-left: 2.75rem;
+}
+.ck-editor__editable ul:not(.ct-item-list) > li::before {
+  content: "";
+  position: absolute;
+  text-align: center;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border-radius: 100%;
+  top: 0.6875rem;
+  left: 0.6875rem;
+}
+.ck-editor__editable ol:not(.ct-item-list) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  counter-reset: ordered_counter;
+  padding: 0;
+  list-style: none;
+}
+.ck-editor__editable ol:not(.ct-item-list) > li {
+  counter-increment: ordered_counter;
+  padding-left: 2.75rem;
+}
+.ck-editor__editable ol:not(.ct-item-list) > li::before {
+  content: counter(ordered_counter);
+  display: inline-block;
+  text-align: center;
+  width: 1.75rem;
+  margin-left: -2.75rem;
+  margin-right: 1rem;
+}
+.ck-editor__editable img {
+  height: auto;
+  max-width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.ck-editor__editable figure {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.ck-editor__editable figure img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ck-editor__editable table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  border-spacing: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+@media (min-width: 0) {
+  .ck-editor__editable table {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable table {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 0) {
+  .ck-editor__editable table thead,
+  .ck-editor__editable table tfoot {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable table thead,
+  .ck-editor__editable table tfoot {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+.ck-editor__editable table tr th,
+.ck-editor__editable table tr td {
+  padding: 0.75rem 1.5rem;
+  vertical-align: top;
+}
+.ck-editor__editable table caption {
+  text-align: left;
+  padding: 0.75rem 0;
+}
+@media (min-width: 0) {
+  .ck-editor__editable table caption {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable table caption {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+.ck-editor__editable table.ck-editor__editable table--caption-after {
+  caption-side: bottom;
+}
+@media (min-width: 0) {
+  .ck-editor__editable table.ck-editor__editable table--caption-after caption {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ck-editor__editable table.ck-editor__editable table--caption-after caption {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 767px) {
+  .ck-editor__editable table:not(.ct-table--data) thead,
+  .ck-editor__editable table:not(.ct-table--data) tfoot {
+    position: absolute !important;
+    clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+    overflow: hidden;
+    height: 1px !important;
+    width: 1px !important;
+    word-wrap: normal;
+  }
+  .ck-editor__editable table:not(.ct-table--data) thead.ct-focusable:active, .ck-editor__editable table:not(.ct-table--data) thead.ct-focusable:focus-visible, .ck-editor__editable table:not(.ct-table--data) thead.ct-focusable:hover,
+  .ck-editor__editable table:not(.ct-table--data) tfoot.ct-focusable:active,
+  .ck-editor__editable table:not(.ct-table--data) tfoot.ct-focusable:focus-visible,
+  .ck-editor__editable table:not(.ct-table--data) tfoot.ct-focusable:hover {
+    position: static !important;
+    overflow: visible;
+    clip: auto;
+    width: auto !important;
+    height: auto !important;
+  }
+  .ck-editor__editable table:not(.ct-table--data) tbody tr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ck-editor__editable table:not(.ct-table--data) tbody tr td {
+    border: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .ck-editor__editable table:not(.ct-table--data) tbody tr td:first-of-type::after {
+    visibility: hidden;
+  }
+  .ck-editor__editable table:not(.ct-table--data) tbody tr td::after {
+    content: "";
+    width: calc(100% - 30px);
+    display: block;
+    margin: 0 auto;
+    height: 0.0625rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -6px;
+  }
+  .ck-editor__editable table:not(.ct-table--data) tbody tr td::before {
+    content: attr(data-title);
+    display: table-cell;
+    height: 100%;
+    width: 30%;
+    max-width: 6rem;
+    flex-shrink: 0;
+    vertical-align: middle;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 767px) and (min-width: 0) {
+  .ck-editor__editable table:not(.ct-table--data) tbody tr td::before {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (max-width: 767px) and (min-width: 768px) {
+  .ck-editor__editable table:not(.ct-table--data) tbody tr td::before {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
+@media (max-width: 767px) {
+  .ck-editor__editable table:not(.ct-table--data) tr th,
+  .ck-editor__editable table:not(.ct-table--data) tr td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+.ck-editor__editable h1 {
+  color: var(--ct-color-light-heading);
+}
+.ck-editor__editable h2 {
+  color: var(--ct-color-light-heading);
+}
+.ck-editor__editable h3 {
+  color: var(--ct-color-light-heading);
+}
+.ck-editor__editable h4 {
+  color: var(--ct-color-light-heading);
+}
+.ck-editor__editable h5 {
+  color: var(--ct-color-light-heading);
+}
+.ck-editor__editable h6 {
+  color: var(--ct-color-light-heading);
+}
+.ck-editor__editable a:not(.ct-button) {
+  color: var(--ct-color-light-interaction-background);
+}
+.ck-editor__editable a:not(.ct-button):focus-visible {
+  outline-offset: 0;
+  outline-width: 0.1875rem;
+  outline-style: solid;
+  outline-color: var(--ct-color-light-interaction-focus);
+}
+.ck-editor__editable a:not(.ct-button):hover {
+  background-color: var(--ct-color-light-interaction-hover-background);
+  color: var(--ct-color-light-interaction-hover-text);
+}
+.ck-editor__editable blockquote {
+  color: var(--ct-color-light-body);
+  background-color: var(--ct-color-light-background-light);
+}
+.ck-editor__editable blockquote::before {
+  background-color: var(--ct-color-light-highlight);
+}
+.ck-editor__editable blockquote cite {
+  color: var(--ct-color-light-body);
+}
+.ck-editor__editable ul:not(.ct-item-list) > li {
+  color: var(--ct-color-light-body);
+}
+.ck-editor__editable ul:not(.ct-item-list) > li::before {
+  background-color: var(--ct-color-light-body);
+}
+.ck-editor__editable ol:not(.ct-item-list) > li {
+  color: var(--ct-color-light-body);
+}
+.ck-editor__editable ol:not(.ct-item-list) > li::before {
+  color: var(--ct-color-light-body);
+}
+.ck-editor__editable table {
+  color: var(--ct-color-light-body);
+  background-color: var(--ct-color-light-background-light);
+}
+.ck-editor__editable table thead {
+  color: var(--ct-color-light-heading);
+}
+@media (min-width: 768px) {
+  .ck-editor__editable table thead {
+    border-bottom: solid 0.0625rem var(--ct-color-light-border);
+  }
+}
+.ck-editor__editable table thead tr:last-child {
+  border-bottom: solid 0.125rem var(--ct-color-light-border);
+}
+.ck-editor__editable table tfoot {
+  color: var(--ct-color-light-heading);
+}
+@media (min-width: 768px) {
+  .ck-editor__editable table tfoot {
+    border-top: solid 0.0625rem var(--ct-color-light-border);
+  }
+}
+.ck-editor__editable table tfoot tr:last-child {
+  border-top: solid 0.125rem var(--ct-color-light-border);
+}
+.ck-editor__editable table tbody tr {
+  border-bottom: solid 0.0625rem var(--ct-color-light-border);
+}
+.ck-editor__editable table caption {
+  color: var(--ct-color-light-body);
+}
+.ck-editor__editable table.ct-table--data {
+  border-top: solid 0.0625rem var(--ct-color-light-border);
+}
+.ck-editor__editable table.ct-table--striped tbody tr:nth-child(odd) {
+  background: var(--ct-color-light-background-light);
+}
+.ck-editor__editable table.ct-table--striped tbody tr:nth-child(odd) td {
+  color: var(--ct-color-light-body);
+}
+.ck-editor__editable table.ct-table--striped tbody tr:nth-child(even) {
+  background: var(--ct-color-light-background);
+}
+.ck-editor__editable table.ct-table--striped tbody tr:nth-child(even) td {
+  color: var(--ct-color-light-body);
+}

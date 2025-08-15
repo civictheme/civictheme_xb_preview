@@ -1,0 +1,48 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Message
+status: obsolete
+description: Message component for various notification types
+props:
+  type: object
+  properties:
+    theme:
+      type: string
+      title: Theme
+      description: Theme variation (light or dark).
+      enum:
+        - light
+        - dark
+    type:
+      type: string
+      title: Type
+      description: Message type (information, error, warning, success).
+      enum:
+        - information
+        - error
+        - warning
+        - success
+    vertical_spacing:
+      type: string
+      title: Vertical Spacing
+      description: Message vertical spacing (none, top, bottom, both).
+      enum:
+        - none
+        - top
+        - bottom
+        - both
+    with_background:
+      type: boolean
+      title: With background
+      description: Whether to display with a background.
+
+    modifier_class:
+      type: string
+      title: Modifier Class
+      description: Additional CSS classes.
+slots:
+  title:
+    title: Title
+    description: Title text.
+  content:
+    title: Content
+    description: Content text.

@@ -1,0 +1,51 @@
+.user-logged-in .ct-header .ct-navigation.contextual-region {
+  position: unset;
+}
+
+.path-admin #layout-builder {
+  padding: 1.5em 1.5em 0.5em;
+  border: 3px solid #2f91da;
+  background-color: #fff;
+}
+.path-admin #layout-builder div[data-layout-builder-highlight-id^=section-] {
+  width: 100%;
+  margin-bottom: 1.5em;
+  padding: 1.5em 0;
+  text-align: center;
+  outline: 2px dashed #979797;
+  background-color: #f7f7f7;
+}
+.path-admin #layout-builder div[role=group] {
+  margin-bottom: 1.5em;
+}
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container section[class^=ct-layout__],
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container aside[class^=ct-layout__] {
+  outline: 2px dashed #2f91da;
+}
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container section[class^=ct-layout__] div[aria-hidden],
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container aside[class^=ct-layout__] div[aria-hidden] {
+  display: none;
+}
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container section[class^=ct-layout__] .block.block-layout-builder,
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container aside[class^=ct-layout__] .block.block-layout-builder {
+  padding: 1.5em;
+  cursor: move;
+  background-color: #fff;
+  position: relative;
+}
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container section[class^=ct-layout__] .block.block-layout-builder [tabindex="-1"],
+.path-admin #layout-builder div[role=group] main[data-layout-builder-highlight-id^=section-update-] .ct-layout__inner.container aside[class^=ct-layout__] .block.block-layout-builder [tabindex="-1"] {
+  pointer-events: none;
+}
+
+main.ct-layout.ct-vertical-spacing--top .entity-moderation-form {
+  margin-top: 0;
+}
+
+.entity-moderation-form .entity-moderation-form__item {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.entity-moderation-form input.ct-button--submit {
+  margin-top: 1.75rem;
+}

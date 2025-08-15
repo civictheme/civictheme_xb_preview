@@ -1,0 +1,45 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Text Icon
+status: obsolete
+description: Component for combining text with icons
+props:
+  type: object
+  properties:
+    text:
+      type: ['string', 'null']
+      title: Text
+      description: Text content.
+      examples:
+        - Text icon
+    is_new_window:
+      type: ['boolean', 'null']
+      title: New window
+      description: Whether to open in a new window.
+    is_external:
+      type: ['boolean', 'null']
+      title: External
+      description: Whether the link is external.
+    icon:
+      type: ['string', 'null']
+      title: Icon
+      description: Icon name.
+    icon_placement:
+      type: ['string', 'null']
+      title: Icon placement
+      description: Icon position (before or after).
+      enum:
+        - before
+        - after
+      default: after
+    icon_class:
+      type: ['string', 'null']
+      title: Icon class
+      description: Class for custom icon.
+    icon_group_disabled:
+      type: ['boolean', 'null']
+      title: Disable icon grouping
+      description: Whether to disable icon and last word grouping.
+    icon_single_only:
+      type: ['boolean', 'null']
+      title: Single icon only
+      description: Whether to show only one icon (if both icon and is_external are present, external takes preference).

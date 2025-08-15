@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Civictheme One Column component.
+ *
+ * Variables:
+ * - column_one: [string] First column slot.
+ * - gap: [string] Gap: none, small, medium, large.
+ * - vertical: [string] Vertical: top, center, bottom.
+ */
+#}
+
+{% set column_one %}
+  {% block column_one %}
+  {% endblock %}
+{% endset %}
+
+{% include 'civictheme_xb:flexible-grid' with {
+  gap: gap,
+  vertical: vertical,
+  horizontal: 'left',
+  col: 'one',
+  wrap: 'wrap',
+  column_one: column_one,
+} only %}

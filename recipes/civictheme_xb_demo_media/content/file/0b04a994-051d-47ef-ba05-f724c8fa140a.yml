@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0b04a994-051d-47ef-ba05-f724c8fa140a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+      target_uuid: ''
+  filename:
+    -
+      value: 'CT 930 Wide .png'
+  uri:
+    -
+      value: 'public://2025-08/CT 930 Wide .png'
+      url: /sites/default/files/2025-08/CT%20930%20Wide%20.png
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 141347
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1754873529

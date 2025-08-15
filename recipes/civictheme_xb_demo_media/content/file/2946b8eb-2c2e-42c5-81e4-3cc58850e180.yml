@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2946b8eb-2c2e-42c5-81e4-3cc58850e180
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+      target_uuid: ''
+  filename:
+    -
+      value: 'Starshot Updates.png'
+  uri:
+    -
+      value: 'public://2025-08/Starshot Updates.png'
+      url: /sites/default/files/2025-08/Starshot%20Updates.png
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 54657
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1754870723

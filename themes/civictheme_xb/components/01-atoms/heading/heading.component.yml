@@ -1,0 +1,41 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Heading
+status: stable
+description: Heading component for titles and section headings
+props:
+  type: object
+  properties:
+    theme:
+      type: ['string', 'null']
+      title: Theme
+      description: Theme variation (light or dark).
+      enum:
+        - light
+        - dark
+      default: light
+      examples:
+        - light
+    content:
+      type: ['string', 'null']
+      title: Content
+      description: Heading content.
+      examples:
+        - Heading
+    level:
+      type: ['integer', 'null']
+      title: Level
+      description: Heading level (1-6).
+      enum:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+      default: 2
+      examples:
+        - 2
+    modifier_class:
+      type: ['string', 'null']
+      title: Modifier classes
+      description: Additional CSS classes.

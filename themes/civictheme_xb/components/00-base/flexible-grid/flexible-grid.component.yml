@@ -1,0 +1,109 @@
+$schema: 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+
+name: Flexible Grid
+status: experimental
+group: Base
+props:
+  type: object
+  properties:
+    # col:
+    #   type: string
+    #   title: Columns
+    #   description: 'Number of inline columns: none, one, two, three, four.'
+    #   enum:
+    #   - none
+    #   - one
+    #   - two
+    #   - three
+    #   - four
+    #   default: none
+    #   examples:
+    #   - none
+    vertical:
+      type: string
+      title: Align items
+      description: 'Vertical alignment: top, center, bottom.'
+      enum:
+        - top
+        - center
+        - bottom
+      default: top
+      examples:
+        - top
+    horizontal:
+      type: string
+      title: Justify items
+      description: 'Horizontal alignment: left, center, right, space-between. Note: space-between only works with col: none.'
+      enum:
+        - left
+        - center
+        - right
+        - space-between
+      default: left
+      examples:
+        - left
+    direction:
+      type: string
+      title: Direction of items
+      description: 'Place items: Across the page, Down the page.'
+      enum:
+        - across
+        - down
+      default: across 
+      examples:
+        - across  
+    gap:
+      type: string
+      title: Gap between items
+      description: 'The space between columns or content.'
+      enum:
+        - none
+        - small
+        - medium
+        - large
+      default: medium
+      examples:
+        - medium
+    wrap:
+      type: string
+      title: Wrap
+      description: 'When using col: none, this will allow components to wrap.'
+      enum:
+        - wrap
+        - nowrap
+      examples:
+        - wrap
+    modifier_class:
+      type: string
+      title: Modifier class
+      description: Additional classes.
+slots:
+  content:
+    title: Content
+    description: Flexible content slot.
+    # examples:
+    #   - Slot
+  # column_one:
+  #   title: Column one
+  #   description: First column slot.
+  #   # @fixme if no examples, component does not show up.
+  #   examples:
+  #     - Slot
+  # column_two:
+  #   title: Column two
+  #   description: Second column slot.
+  #   # @fixme if no examples, component does not show up.
+  #   examples:
+  #     - Slot
+  # column_three:
+  #   title: Column three
+  #   description: Third column slot.
+  #   # @fixme if no examples, component does not show up.
+  #   examples:
+  #     - Slot
+  # column_four:
+  #   title: Column four
+  #   description: Fourth column slot.
+  #   # @fixme if no examples, component does not show up.
+  #   examples:
+  #     - Slot

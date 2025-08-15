@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Civictheme Container component.
+ */
+#}
+
+{% set visibility_options = {
+  'always': '',
+  'mobile only': 'show-xxs hide-s',
+  'tablet only': 'hide-xxs show-m hide-xl',
+  'mobile and tablet': 'show-xxs hide-xl',
+  'tablet and up': 'hide-xxs show-m',
+  'desktop and up': 'hide-xxs show-xl',
+} %}
+{% set theme_class = 'ct-theme-%s'|format(theme|default('light')) %}
+{% set visibility_class = visibility_options[visibility] ? visibility_options[visibility] : '' %}
+{% set with_background_class = with_background ? 'ct-container--with-background' : '' %}
+{% set vertical_spacing_class = vertical_spacing in ['top', 'bottom', 'both'] ? 'ct-vertical-spacing--%s'|format(vertical_spacing) : '' %}
+{% set vertical_spacing_inner_class = vertical_spacing_inner in ['top', 'bottom', 'both'] ? 'ct-vertical-spacing-inset--%s'|format(vertical_spacing_inner) : '' %}
+{% set is_contained_class = is_contained ? 'container' : 'container-fluid' %}
+{% set modifier_class = '%s %s %s %s %s %s'|format(theme_class, with_background_class, vertical_spacing_class, vertical_spacing_inner_class, visibility_class, modifier_class|default('')) %}
+
+<div
+  class="ct-container {{ modifier_class -}}"
+  {% if attributes is not empty %}{{- attributes|raw -}}{% endif %}
+>
+  <div class="ct-container__inner {{ is_contained_class }}">
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</div>

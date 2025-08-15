@@ -1,0 +1,16 @@
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .toolbar-tray-open.toolbar-fixed .ct-header :target::before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+  }
+}

@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 17f2ebb3-39b1-4a5e-b3f7-8d164bf91b1c
+  bundle: image
+  default_langcode: en
+  depends:
+    0b04a994-051d-47ef-ba05-f724c8fa140a: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+      target_uuid: ''
+  name:
+    -
+      value: 'CT 930 Wide .png'
+  created:
+    -
+      value: 1754873529
+  revision_translation_affected:
+    -
+      value: true
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Drush Site-Install'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://xb-demo.ddev.site:33000/page/1'
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
+  field_media_image:
+    -
+      entity: 0b04a994-051d-47ef-ba05-f724c8fa140a
+      alt: Graphic
+      title: ''
+      width: 930
+      height: 498
+      srcset_candidate_uri_template: '/sites/default/files/styles/xb_parametrized_width--{width}/public/2025-08/CT%20930%20Wide%20.png.webp?itok=Z3u4gj6N'
+      src_with_alternate_widths: '/sites/default/files/2025-08/CT%20930%20Wide%20.png?alternateWidths=/sites/default/files/styles/xb_parametrized_width--%7Bwidth%7D/public/2025-08/CT%2520930%2520Wide%2520.png.webp%3Fitok%3DZ3u4gj6N'

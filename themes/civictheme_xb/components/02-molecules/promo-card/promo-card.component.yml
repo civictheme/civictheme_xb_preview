@@ -1,0 +1,127 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Promo Card
+status: stable
+description: Card component for displaying promotional content with image, title, summary, date, and tags
+props:
+  type: object
+  properties:
+    theme:
+      type: ['string', 'null']
+      title: Theme
+      description: Theme variation (light or dark).
+      enum:
+        - light
+        - dark
+      examples:
+        - light
+    image:
+      $ref: json-schema-definitions://experience_builder.module/image
+      type: ['object', 'null']
+      title: Image
+    # image:
+    #   type: ['object', 'null']
+    #   title: Image
+    #   description: Card image.
+    #   properties:
+    #     url:
+    #       type: ['string', 'null']
+    #       title: URL
+    #       description: Image URL.
+    #     alt:
+    #       type: ['string', 'null']
+    #       title: Alt text
+    #       description: Image alt text.
+    date_iso:
+      type: ['string', 'null']
+      title: ISO Date
+      description: Start date and time in ISO format.
+    date:
+      type: ['string', 'null']
+      title: Date
+      description: Start date and time.
+    date_end_iso:
+      type: ['string', 'null']
+      title: ISO End Date
+      description: End time in ISO format.
+    date_end:
+      type: ['string', 'null']
+      title: End Date
+      description: Formatted end time.
+    subtitle:
+      type: ['string', 'null']
+      title: Subtitle
+      description: Subtitle text.
+    title:
+      type: ['string', 'null']
+      title: Title
+      description: Card title text.
+      examples:
+        - Promo card title
+    summary:
+      type: ['string', 'null']
+      title: Summary
+      description: Card summary.
+      examples:
+        - Promo card summary
+    link_url:
+      type: ['string', 'null']
+      format: uri
+      title: URL
+      description: Link URL.
+    link_is_new_window:
+      type: ['boolean', 'null']
+      title: New Window
+      description: Whether to open the link in a new window.
+    modifier_class:
+      type: ['string', 'null']
+      title: Modifier Class
+      description: Additional CSS classes.
+    # link:
+    #   type: ['object', 'null']
+    #   title: Link
+    #   description: Card link object.
+    #   properties:
+    #     url:
+    #       type: ['string', 'null']
+    #       title: URL
+    #       description: Link URL.
+    #     is_new_window:
+    #       type: ['boolean', 'null']
+    #       title: New Window
+    #       description: Whether to open the link in a new window.
+    #     is_external:
+    #       type: ['boolean', 'null']
+    #       title: External
+    #       description: Whether the link is external.
+    # tags:
+    #   type: ['array', 'null']
+    #   title: Tags
+    #   description: Card tags.
+    #   items:
+    #     type: ['object', 'null']
+    #     properties:
+    #       text:
+    #         type: ['string', 'null']
+    #         title: Text
+    #         description: Tag text.
+    #       url:
+    #         type: ['string', 'null']
+    #         title: URL
+    #         description: Tag URL.
+    #       is_new_window:
+    #         type: ['boolean', 'null']
+    #         title: New Window
+    #         description: Whether to open the tag in a new window.
+slots:
+  content_top:
+    title: Content Top
+    description: Top content area.
+  # image_over:
+  #   title: Image Over
+  #   description: Image overlay content.
+  content_middle:
+    title: Content Middle
+    description: Middle content area.
+  content_bottom:
+    title: Content Bottom
+    description: Bottom content area.

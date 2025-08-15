@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f1d57570-49ab-4f7b-8aa6-a91b5312eac5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+      target_uuid: ''
+  filename:
+    -
+      value: Background.png
+  uri:
+    -
+      value: 'public://2025-08/Background.png'
+      url: /sites/default/files/2025-08/Background.png
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 723711
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1754873489
